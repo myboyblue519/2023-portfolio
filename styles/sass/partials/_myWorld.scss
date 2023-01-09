@@ -1,12 +1,57 @@
+@use "variables" as *;
+
+
 .myWorld {
-    height: 50vh;
-    background-color: black;
+    height: 100vh;
+    background-color: seashell;
+
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem 18rem;
+
+        h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+
+            i {
+                color: $primaryColor;
+            }
+        }
+
+    }
 
     .skillBoxes {
-        div {
-            height: 50px;
-            width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .skillCube {
+            height: 18rem;
+            width: 18rem;
             border: 2px solid grey;
+            margin: 0 auto;
+
+            .mySkills {
+                margin: 1rem;
+
+                i {
+                    color: $primaryColor;
+                    font-size: 2rem;
+                }
+
+                h4 {
+                    font-size: 2rem;
+                    margin: 1rem auto;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
         }
     }
 }

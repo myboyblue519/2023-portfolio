@@ -263,7 +263,7 @@ html {
 }
 
 header {
-  height: 75vh;
+  height: 90vh;
   background-color: rgb(94, 93, 93);
 }
 header .introduction {
@@ -280,6 +280,7 @@ header .introduction {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 4rem;
 }
 header .introduction button {
   background-color: transparent;
@@ -288,11 +289,11 @@ header .introduction button {
   text-transform: uppercase;
   color: white;
   font-weight: 600;
-  border: 4px solid green;
+  border: 4px solid springgreen;
   border-radius: 0.3rem;
 }
 header .introduction button:hover {
-  background-color: green;
+  background-color: springgreen;
 }
 header .introduction h2 {
   font-size: 2rem;
@@ -300,19 +301,23 @@ header .introduction h2 {
   font-weight: 600;
 }
 header .introduction h1 {
+  margin-top: 0;
   font-size: 4rem;
   color: white;
 }
 header .introduction h1 span {
-  color: green;
+  color: springgreen;
 }
 header .introduction .openingStatement {
   font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 5rem;
 }
 header nav {
   margin-right: 4rem;
 }
 header nav ul {
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,17 +333,66 @@ header nav ul li {
   font-weight: 600;
 }
 header nav ul li:hover {
-  color: green;
+  color: springgreen;
 }
 
 .myWorld {
-  height: 50vh;
-  background-color: black;
+  height: 100vh;
+  background-color: seashell;
 }
-.myWorld .skillBoxes div {
-  height: 50px;
-  width: 50px;
+.myWorld .welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem 18rem;
+}
+.myWorld .welcome h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.myWorld .welcome h2 i {
+  color: springgreen;
+}
+.myWorld .skillBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.myWorld .skillBoxes .skillCube {
+  height: 18rem;
+  width: 18rem;
   border: 2px solid grey;
+  margin: 0 auto;
+}
+.myWorld .skillBoxes .skillCube .mySkills {
+  margin: 1rem;
+}
+.myWorld .skillBoxes .skillCube .mySkills i {
+  color: springgreen;
+  font-size: 2rem;
+}
+.myWorld .skillBoxes .skillCube .mySkills h4 {
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+.myWorld .skillBoxes .skillCube .mySkills p {
+  font-size: 1rem;
 }
 
 .about {

@@ -10,11 +10,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 4rem 18rem;
+        margin: 0 18rem 5rem;
 
         h2 {
-            font-size: 2rem;
+            font-size: 1.7rem;
             text-transform: uppercase;
+            margin-top: 8rem;
 
             i {
                 color: $primaryColor;
@@ -30,26 +31,27 @@
 
 
         .skillCube {
-            height: 18rem;
-            width: 18rem;
-            border: 2px solid grey;
-            margin: 0 auto;
+            height: 15rem;
+            width: 17rem;
+            border: 2px solid lightgrey;
+            margin: 0 .5rem;
+            border-radius: 1rem;
 
             .mySkills {
-                margin: 1rem;
+                margin: 2.5rem;
 
                 i {
                     color: $primaryColor;
-                    font-size: 2rem;
+                    font-size: 1.6rem;
                 }
 
                 h4 {
-                    font-size: 2rem;
+                    font-size: 1.6rem;
                     margin: 1rem auto;
                 }
 
                 p {
-                    font-size: 1rem;
+                    font-size: .8rem;
                 }
             }
         }

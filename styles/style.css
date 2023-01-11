@@ -354,11 +354,12 @@ header nav ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 4rem 18rem;
+  margin: 0 18rem 5rem;
 }
 .myWorld .welcome h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
+  margin-top: 8rem;
 }
 .myWorld .welcome h2 i {
   color: springgreen;
@@ -375,24 +376,25 @@ header nav ul li:hover {
           justify-content: center;
 }
 .myWorld .skillBoxes .skillCube {
-  height: 18rem;
-  width: 18rem;
-  border: 2px solid grey;
-  margin: 0 auto;
+  height: 15rem;
+  width: 17rem;
+  border: 2px solid lightgrey;
+  margin: 0 0.5rem;
+  border-radius: 1rem;
 }
 .myWorld .skillBoxes .skillCube .mySkills {
-  margin: 1rem;
+  margin: 2.5rem;
 }
 .myWorld .skillBoxes .skillCube .mySkills i {
   color: springgreen;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .myWorld .skillBoxes .skillCube .mySkills h4 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 1rem auto;
 }
 .myWorld .skillBoxes .skillCube .mySkills p {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .about {

@@ -4,4 +4,42 @@
 .getInTouch {
     height: 50vh;
     background-color: ghostwhite;
+
+    .touch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+
+            i {
+                color: green;
+            }
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                margin: auto 4rem;
+
+                div {
+                    width: 3rem;
+                    height: 3rem;
+                    background-color: springgreen;
+                    border-radius: 50%;
+
+                    i {
+                        color: white;
+                        margin: 1rem;
+                    }
+                }
+            }
+
+        }
+    }
 }

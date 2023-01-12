@@ -498,10 +498,14 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 5rem 15rem 2rem;
 }
 .portfolio .portfolioTitle h3 {
   font-size: 1rem;
   text-transform: uppercase;
+}
+.portfolio .portfolioTitle h3 i {
+  color: green;
 }
 .portfolio .portfolioTitle .portfoilioLinks {
   display: -webkit-box;
@@ -534,9 +538,15 @@ button {
           align-items: center;
 }
 .portfolio .portfolioImages div {
-  width: 20rem;
-  height: 20rem;
+  width: 17rem;
+  height: 17rem;
   border: 2px solid red;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.portfolio .portfolioImages div img {
+  width: 17rem;
+  height: 17rem;
 }
 
 .getInTouch {

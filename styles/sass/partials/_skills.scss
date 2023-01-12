@@ -4,4 +4,36 @@
 .skills {
     height: 50vh;
     background-color: grey;
+    display: flex;
+
+    .leftSkill {
+        .text {
+            padding: 4rem;
+
+            h3 {
+                color: $primaryColor;
+                text-transform: uppercase;
+                font-size: 1rem;
+                margin-bottom: 0;
+            }
+
+            h2 {
+                font-size: 2rem;
+                color: white;
+                margin-top: 0;
+            }
+
+            p {
+                color: lightgrey;
+                font-size: .8rem;
+            }
+        }
+    }
+
+    .rightSkill {
+        img {
+            height: 20rem;
+            width: 30rem;
+        }
+    }
 }

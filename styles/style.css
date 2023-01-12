@@ -325,11 +325,12 @@ header nav ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   list-style: none;
+  padding: 1rem;
 }
 header nav ul li {
   margin-left: 3rem;
   color: white;
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 header nav ul li:hover {
@@ -398,8 +399,55 @@ header nav ul li:hover {
 }
 
 .about {
-  height: 50vh;
+  height: 80vh;
   background-color: ghostwhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about .lefttSide {
+  width: 50%;
+}
+.about .lefttSide img {
+  height: 25rem;
+  width: 25rem;
+}
+.about .rightSide {
+  margin: 1rem 4.5rem;
+}
+.about h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: green;
+}
+.about h2 {
+  font-size: 2rem;
+}
+.about p {
+  font-size: 0.8em;
+}
+.about .lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about .lists ul li {
+  list-style: none;
+}
+.about .lists ul li h5 {
+  text-transform: uppercase;
+}
+
+button {
+  width: 10rem;
+  height: 2.5rem;
+  border: none;
+  color: white;
+  background-color: green;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .skills {

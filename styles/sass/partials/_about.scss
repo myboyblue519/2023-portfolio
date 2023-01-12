@@ -2,6 +2,61 @@
 
 
 .about {
-    height: 50vh;
+    height: 80vh;
     background-color: $secondaryColor;
+    display: flex;
+
+    .lefttSide {
+        width: 50%;
+
+        img {
+            height: 25rem;
+            width: 25rem;
+        }
+    }
+
+    .rightSide {
+        margin: 1rem 4.5rem;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: green;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .lists {
+        display: flex;
+
+        ul {
+            li {
+                list-style: none;
+
+                h5 {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+    }
+}
+
+button {
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+    color: white;
+    background-color: green;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
 }

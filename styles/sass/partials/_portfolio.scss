@@ -2,6 +2,52 @@
 
 
 .portfolio {
-    height: 50vh;
-    background-color: black;
+    height: 120vh;
+    background-color: white;
+
+    .portfolioTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .portfoilioLinks {
+            display: flex;
+
+            li {
+                border: 2px solid lightgrey;
+                text-align: center;
+                list-style: none;
+                border-radius: .3rem;
+                margin: 0.2rem;
+                padding: 0.2rem;
+            }
+
+            li:hover {
+                background-color: green;
+                color: white;
+            }
+
+        }
+    }
+
+    .portfolioImages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            width: 20rem;
+            height: 20rem;
+            border: 2px solid red;
+        }
+
+
+    }
 }

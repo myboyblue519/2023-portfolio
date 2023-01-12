@@ -481,8 +481,62 @@ button {
 }
 
 .portfolio {
-  height: 50vh;
-  background-color: black;
+  height: 120vh;
+  background-color: white;
+}
+.portfolio .portfolioTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.portfolio .portfolioTitle h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.portfolio .portfolioTitle .portfoilioLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.portfolio .portfolioTitle .portfoilioLinks li {
+  border: 2px solid lightgrey;
+  text-align: center;
+  list-style: none;
+  border-radius: 0.3rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+.portfolio .portfolioTitle .portfoilioLinks li:hover {
+  background-color: green;
+  color: white;
+}
+.portfolio .portfolioImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portfolio .portfolioImages div {
+  width: 20rem;
+  height: 20rem;
+  border: 2px solid red;
 }
 
 .getInTouch {

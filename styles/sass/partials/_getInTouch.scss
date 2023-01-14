@@ -2,7 +2,7 @@
 
 
 .getInTouch {
-    height: 50vh;
+    height: 65vh;
     background-color: ghostwhite;
     position: relative;
 
@@ -48,43 +48,47 @@
                         margin: 1rem;
                     }
                 }
+
+                .contactInfo {
+                    margin: 0.5rem 0.5rem;
+                }
             }
 
         }
     }
 
-    .formMap {
-        display: flex;
+    // .formMap {
+    //     display: flex;
 
-        iframe {
-            margin: auto;
-        }
+    //     iframe {
+    //         margin: auto;
+    //     }
 
-        #name {
-            margin: 0rem auto 0.5rem;
-            width: 11.6rem;
-        }
+    //     #name {
+    //         margin: 0rem auto 0.5rem;
+    //         width: 11.6rem;
+    //     }
 
-        #email {
-            width: 11.6rem;
-        }
+    //     #email {
+    //         width: 11.6rem;
+    //     }
 
-        #message {
-            display: block;
-        }
+    //     #message {
+    //         display: block;
+    //     }
 
-        .formDiv {
-            margin: 0 auto;
+    //     .formDiv {
+    //         margin: 0 auto;
 
-            h3 {
-                margin-bottom: 1rem;
-            }
-        }
+    //         h3 {
+    //             margin-bottom: 1rem;
+    //         }
+    //     }
 
-        .submit {
-            text-transform: uppercase;
-            margin: 0.5rem auto;
-            background-color: $primaryColor;
-        }
-    }
+    //     .submit {
+    //         text-transform: uppercase;
+    //         margin: 0.5rem auto;
+    //         background-color: $primaryColor;
+    //     }
+    // }
 }

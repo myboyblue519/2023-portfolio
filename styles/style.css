@@ -364,7 +364,7 @@ header nav ul li {
   font-size: 1.3rem;
   font-weight: 600;
 }
-header nav ul li:hover {
+header nav ul a:hover {
   color: springgreen;
 }
 header a {
@@ -539,6 +539,7 @@ header a {
 }
 .about h2 {
   font-size: 2rem;
+  margin: 1rem auto;
 }
 .about p {
   font-size: 0.8em;
@@ -565,6 +566,23 @@ button {
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: bold;
+  margin: 1rem auto;
+}
+
+button:hover {
+  background-color: white;
+  color: green;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .skills {
@@ -586,7 +604,7 @@ button {
 .skills .leftSkill .text h2 {
   font-size: 2rem;
   color: white;
-  margin-top: 0;
+  margin: 1rem auto;
 }
 .skills .leftSkill .text p {
   color: lightgrey;
@@ -673,7 +691,7 @@ button {
 }
 
 .getInTouch {
-  height: 50vh;
+  height: 65vh;
   background-color: ghostwhite;
   position: relative;
 }
@@ -728,34 +746,8 @@ button {
   color: white;
   margin: 1rem;
 }
-.getInTouch .formMap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.getInTouch .formMap iframe {
-  margin: auto;
-}
-.getInTouch .formMap #name {
-  margin: 0rem auto 0.5rem;
-  width: 11.6rem;
-}
-.getInTouch .formMap #email {
-  width: 11.6rem;
-}
-.getInTouch .formMap #message {
-  display: block;
-}
-.getInTouch .formMap .formDiv {
-  margin: 0 auto;
-}
-.getInTouch .formMap .formDiv h3 {
-  margin-bottom: 1rem;
-}
-.getInTouch .formMap .submit {
-  text-transform: uppercase;
-  margin: 0.5rem auto;
-  background-color: springgreen;
+.getInTouch .touch ul li .contactInfo {
+  margin: 0.5rem 0.5rem;
 }
 
 footer {
@@ -767,6 +759,12 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+footer .social {
+  margin: auto 1rem;
+}
+footer .social i {
+  font-size: 1.5rem;
 }
 footer .social a {
   text-decoration: none;

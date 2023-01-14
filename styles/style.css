@@ -594,6 +594,32 @@ button {
   color: white;
   margin: 1rem;
 }
+.getInTouch .formMap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.getInTouch .formMap iframe {
+  margin: auto;
+}
+.getInTouch .formMap #name {
+  margin: 0rem auto 0.5rem;
+  width: 11.6rem;
+}
+.getInTouch .formMap #email {
+  width: 11.6rem;
+}
+.getInTouch .formMap #message {
+  display: block;
+}
+.getInTouch .formMap .formDiv {
+  margin: 0 auto;
+}
+.getInTouch .formMap .submit {
+  text-transform: uppercase;
+  margin: 0.5rem auto;
+  background-color: springgreen;
+}
 
 footer {
   height: 50vh;

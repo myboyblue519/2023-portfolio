@@ -42,4 +42,35 @@
 
         }
     }
+
+    .formMap {
+        display: flex;
+
+        iframe {
+            margin: auto;
+        }
+
+        #name {
+            margin: 0rem auto 0.5rem;
+            width: 11.6rem;
+        }
+
+        #email {
+            width: 11.6rem;
+        }
+
+        #message {
+            display: block;
+        }
+
+        .formDiv {
+            margin: 0 auto;
+        }
+
+        .submit {
+            text-transform: uppercase;
+            margin: 0.5rem auto;
+            background-color: $primaryColor;
+        }
+    }
 }

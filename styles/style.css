@@ -347,6 +347,7 @@ header nav ul li:hover {
 .myWorld {
   height: 100vh;
   background-color: seashell;
+  position: relative;
 }
 .myWorld .welcome {
   display: -webkit-box;
@@ -404,13 +405,29 @@ header nav ul li:hover {
 .myWorld .skillBoxes .skillCube .mySkills p {
   font-size: 0.8rem;
 }
+.myWorld .myWorldSquiggle {
+  position: relative;
+  top: 40px;
+  left: 70px;
+}
+.myWorld .myWorldDashes {
+  position: relative;
+  bottom: -80px;
+  left: 1400px;
+}
 
 .about {
+  position: relative;
   height: 80vh;
   background-color: ghostwhite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.about .aboutScribble {
+  position: absolute;
+  bottom: -35px;
+  left: 35px;
 }
 .about .lefttSide {
   width: 50%;
@@ -458,7 +475,7 @@ button {
 }
 
 .skills {
-  height: 50vh;
+  height: 70vh;
   background-color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,6 +507,12 @@ button {
 .portfolio {
   height: 100vh;
   background-color: white;
+  position: relative;
+}
+.portfolio .portfolioSquiggle {
+  position: absolute;
+  top: 100px;
+  left: 50px;
 }
 .portfolio .portfolioTitle {
   display: -webkit-box;
@@ -505,7 +528,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5rem 15rem 2rem;
+  margin: 2rem 15rem 2rem;
 }
 .portfolio .portfolioTitle h3 {
   font-size: 1.5rem;
@@ -559,6 +582,12 @@ button {
 .getInTouch {
   height: 100vh;
   background-color: ghostwhite;
+  position: relative;
+}
+.getInTouch .getInTouchSquiggle {
+  position: absolute;
+  top: 60px;
+  left: 1360px;
 }
 .getInTouch .touch {
   display: -webkit-box;
@@ -578,7 +607,7 @@ button {
 .getInTouch .touch h3 {
   font-size: 1.5rem;
   text-transform: uppercase;
-  margin: 1.5rem 0;
+  margin: 2rem 0 1rem;
 }
 .getInTouch .touch h3 i {
   color: green;
@@ -587,7 +616,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 .getInTouch .touch ul li {
   list-style: none;
@@ -626,6 +655,9 @@ button {
 }
 .getInTouch .formMap .formDiv {
   margin: 0 auto;
+}
+.getInTouch .formMap .formDiv h3 {
+  margin-bottom: 1rem;
 }
 .getInTouch .formMap .submit {
   text-transform: uppercase;

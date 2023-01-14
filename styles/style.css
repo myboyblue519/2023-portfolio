@@ -367,6 +367,10 @@ header nav ul li {
 header nav ul li:hover {
   color: springgreen;
 }
+header a {
+  text-decoration: none;
+  color: #fff;
+}
 
 @-webkit-keyframes moveInLeft {
   0% {
@@ -669,7 +673,7 @@ button {
 }
 
 .getInTouch {
-  height: 100vh;
+  height: 50vh;
   background-color: ghostwhite;
   position: relative;
 }
@@ -763,4 +767,13 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+footer .social a {
+  text-decoration: none;
+  color: black;
+  margin: 0.5rem 0.5rem;
+  font-size: 1rem;
+}
+footer .social a:hover {
+  color: white;
 }

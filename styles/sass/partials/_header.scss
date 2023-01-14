@@ -11,6 +11,7 @@ header {
         justify-content: center;
         align-items: center;
         margin-top: 4rem;
+        backface-visibility: hidden;
 
         button {
             background-color: transparent;
@@ -25,22 +26,39 @@ header {
 
         button:hover {
             background-color: $primaryColor;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+
+        }
+
+        button:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
         }
 
         h2 {
             font-size: 2rem;
             color: white;
             font-weight: 600;
+
+
+            animation-name: moveInTop;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
         }
 
         h1 {
-            margin-top: 0;
+            margin: .5rem 0;
             font-size: 4rem;
             color: white;
 
             span {
                 color: $primaryColor;
             }
+
+            animation-name: moveInLeft;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
         }
 
         .openingStatement {
@@ -74,5 +92,37 @@ header {
             }
 
         }
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    80% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

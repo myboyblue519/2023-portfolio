@@ -262,6 +262,13 @@ html {
   overflow: hidden;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 header {
   height: 90vh;
   background-color: rgb(94, 93, 93);
@@ -357,13 +364,13 @@ header nav ul li:hover {
           align-items: center;
   margin: 0 18rem 5rem;
 }
-.myWorld .welcome h2 {
-  font-size: 1.7rem;
+.myWorld .welcome h3 {
+  font-size: 1.5rem;
   text-transform: uppercase;
-  margin-top: 8rem;
+  margin: 1.5rem 0;
 }
-.myWorld .welcome h2 i {
-  color: springgreen;
+.myWorld .welcome h3 i {
+  color: green;
 }
 .myWorld .skillBoxes {
   display: -webkit-box;
@@ -481,7 +488,7 @@ button {
 }
 
 .portfolio {
-  height: 120vh;
+  height: 100vh;
   background-color: white;
 }
 .portfolio .portfolioTitle {
@@ -501,8 +508,9 @@ button {
   margin: 5rem 15rem 2rem;
 }
 .portfolio .portfolioTitle h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
+  margin: 1.5rem 0;
 }
 .portfolio .portfolioTitle h3 i {
   color: green;
@@ -538,14 +546,13 @@ button {
           align-items: center;
 }
 .portfolio .portfolioImages div {
-  width: 17rem;
+  width: 19rem;
   height: 17rem;
-  border: 2px solid red;
   margin: 0.5rem;
-  border-radius: 0.5rem;
 }
 .portfolio .portfolioImages div img {
-  width: 17rem;
+  border-radius: 0.5rem;
+  width: 19rem;
   height: 17rem;
 }
 
@@ -569,8 +576,9 @@ button {
           align-items: center;
 }
 .getInTouch .touch h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
+  margin: 1.5rem 0;
 }
 .getInTouch .touch h3 i {
   color: green;
@@ -579,18 +587,22 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 2rem auto;
 }
 .getInTouch .touch ul li {
   list-style: none;
   margin: auto 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.getInTouch .touch ul li div {
+.getInTouch .touch ul li .contactImg {
   width: 3rem;
   height: 3rem;
   background-color: springgreen;
   border-radius: 50%;
 }
-.getInTouch .touch ul li div i {
+.getInTouch .touch ul li .contactImg i {
   color: white;
   margin: 1rem;
 }
@@ -622,6 +634,12 @@ button {
 }
 
 footer {
-  height: 50vh;
+  height: 5vh;
   background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }

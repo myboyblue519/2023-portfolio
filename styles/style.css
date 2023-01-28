@@ -775,3 +775,78 @@ footer .social a {
 footer .social a:hover {
   color: white;
 }
+
+@media (max-width: 500px) {
+  header {
+    height: 100vh;
+  }
+  header .introduction h1 {
+    font-size: 3rem;
+  }
+  header .introduction button {
+    width: 8rem;
+  }
+  header .openingStatement {
+    margin-left: 4rem;
+  }
+  .myWorld {
+    height: 180vh;
+  }
+  .myWorld .welcome {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 3rem 5rem;
+  }
+  .myWorld .skillBoxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about {
+    height: 130vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .rightSide {
+    margin: 1rem 1.5rem;
+  }
+  .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 120vh;
+  }
+  .skills .leftSkill .text {
+    padding: 2rem;
+  }
+  .portfolio {
+    height: 200vh;
+  }
+  .portfolio .portfolioTitle {
+    margin: 2rem 1rem 2rem;
+  }
+  .portfolio .portfolioSquiggle {
+    position: absolute;
+    top: -20px;
+    left: 50px;
+  }
+  .getInTouch {
+    height: 80vh;
+  }
+  .getInTouch .touch ul {
+    margin: 4rem auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .getInTouch .touch ul li {
+    margin: 1rem 4rem;
+  }
+}

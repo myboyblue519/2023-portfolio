@@ -1,0 +1,83 @@
+@use "variables" as *;
+
+@media (max-width: 500px) {
+    header {
+        height: 100vh;
+
+        .introduction {
+            h1 {
+                font-size: 3rem;
+            }
+
+            button {
+                width: 8rem;
+            }
+        }
+
+        .openingStatement {
+            margin-left: 4rem;
+        }
+    }
+
+    .myWorld {
+        height: 180vh;
+
+        .welcome {
+            flex-direction: column;
+            margin: 0 3rem 5rem;
+        }
+
+        .skillBoxes {
+            flex-direction: column;
+        }
+    }
+
+    .about {
+        height: 130vh;
+        flex-direction: column;
+
+        .rightSide {
+            margin: 1rem 1.5rem;
+        }
+    }
+
+    .skills {
+        flex-direction: column;
+        height: 120vh;
+
+        .leftSkill {
+            .text {
+                padding: 2rem;
+            }
+
+        }
+    }
+
+    .portfolio {
+        height: 200vh;
+
+        .portfolioTitle {
+            margin: 2rem 1rem 2rem;
+        }
+
+        .portfolioSquiggle {
+            position: absolute;
+            top: -20px;
+            left: 50px;
+        }
+    }
+
+    .getInTouch {
+        height: 80vh;
+
+        .touch ul {
+            margin: 4rem auto;
+            flex-direction: column;
+
+            li {
+                margin: 1rem 4rem;
+            }
+
+        }
+    }
+}

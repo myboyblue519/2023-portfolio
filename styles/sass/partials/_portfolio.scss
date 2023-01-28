@@ -55,19 +55,28 @@
         justify-content: center;
         align-items: center;
 
-        div {
-            width: 19rem;
-            height: 17rem;
-            // border: 2px solid red;
-            margin: 0.5rem;
+        .portfolioCards {
+            .liveLinks {
+                height: 9rem;
 
-            img {
-                border-radius: 0.5rem;
+                a button {
+                    width: 9rem;
+                }
+            }
+
+            div {
                 width: 19rem;
                 height: 17rem;
+                // border: 2px solid red;
+                margin: 0.5rem;
+
+                img {
+                    border-radius: 0.5rem;
+                    width: 19rem;
+                    height: 17rem;
+                }
             }
+
+
         }
-
-
     }
-}

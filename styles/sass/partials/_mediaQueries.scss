@@ -6,7 +6,8 @@
 
         .introduction {
             h1 {
-                font-size: 3rem;
+                font-size: 2.8rem;
+                animation: none;
             }
 
             button {
@@ -22,6 +23,12 @@
     .myWorld {
         height: 180vh;
 
+        .myWorldDashes {
+            img {
+                display: none;
+            }
+        }
+
         .welcome {
             flex-direction: column;
             margin: 0 3rem 5rem;
@@ -29,12 +36,22 @@
 
         .skillBoxes {
             flex-direction: column;
+
+            .skillCube {
+                margin: 0;
+            }
         }
     }
 
     .about {
         height: 130vh;
         flex-direction: column;
+
+        .lefttSide {
+            img {
+                width: 5rem;
+            }
+        }
 
         .rightSide {
             margin: 1rem 1.5rem;
@@ -49,9 +66,16 @@
             .text {
                 padding: 2rem;
             }
-
         }
+
+        .rightSkill {
+            img {
+                width: 5rem;
+            }
+        }
+
     }
+
 
     .portfolio {
         height: 200vh;
@@ -65,19 +89,41 @@
             top: -20px;
             left: 50px;
         }
+
+        .portfolioImages {
+            div {
+                margin: 0;
+
+                img {
+                    border-radius: 0.5rem;
+                    width: 95%;
+                    height: 17rem;
+                }
+            }
+        }
     }
 
     .getInTouch {
         height: 80vh;
+
+        .getInTouchSquiggle {
+            img {
+                display: none;
+            }
+        }
 
         .touch ul {
             margin: 4rem auto;
             flex-direction: column;
 
             li {
-                margin: 1rem 4rem;
+                margin: 1rem 0 0rem 2rem;
             }
 
         }
+    }
+
+    footer {
+        height: 15vh;
     }
 }

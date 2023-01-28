@@ -679,6 +679,9 @@ button:active {
       -ms-flex-align: center;
           align-items: center;
 }
+.portfolio .portfolioImages .portfolioCards .liveLinks {
+  height: 5rem;
+}
 .portfolio .portfolioImages div {
   width: 19rem;
   height: 17rem;
@@ -781,7 +784,9 @@ footer .social a:hover {
     height: 100vh;
   }
   header .introduction h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    -webkit-animation: none;
+            animation: none;
   }
   header .introduction button {
     width: 8rem;
@@ -791,6 +796,9 @@ footer .social a:hover {
   }
   .myWorld {
     height: 180vh;
+  }
+  .myWorld .myWorldDashes img {
+    display: none;
   }
   .myWorld .welcome {
     -webkit-box-orient: vertical;
@@ -805,12 +813,18 @@ footer .social a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .myWorld .skillBoxes .skillCube {
+    margin: 0;
+  }
   .about {
     height: 130vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .about .lefttSide img {
+    width: 5rem;
   }
   .about .rightSide {
     margin: 1rem 1.5rem;
@@ -825,6 +839,9 @@ footer .social a:hover {
   .skills .leftSkill .text {
     padding: 2rem;
   }
+  .skills .rightSkill img {
+    width: 5rem;
+  }
   .portfolio {
     height: 200vh;
   }
@@ -836,8 +853,19 @@ footer .social a:hover {
     top: -20px;
     left: 50px;
   }
+  .portfolio .portfolioImages div {
+    margin: 0;
+  }
+  .portfolio .portfolioImages div img {
+    border-radius: 0.5rem;
+    width: 95%;
+    height: 17rem;
+  }
   .getInTouch {
     height: 80vh;
+  }
+  .getInTouch .getInTouchSquiggle img {
+    display: none;
   }
   .getInTouch .touch ul {
     margin: 4rem auto;
@@ -847,6 +875,9 @@ footer .social a:hover {
             flex-direction: column;
   }
   .getInTouch .touch ul li {
-    margin: 1rem 4rem;
+    margin: 1rem 0 0rem 2rem;
+  }
+  footer {
+    height: 15vh;
   }
 }

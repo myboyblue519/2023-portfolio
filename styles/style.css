@@ -271,7 +271,7 @@ html {
 
 header {
   height: 90vh;
-  background-color: rgb(94, 93, 93);
+  background-color: rgb(73, 72, 72);
 }
 header .introduction {
   display: -webkit-box;
@@ -528,6 +528,7 @@ header a {
 .about .lefttSide img {
   height: 25rem;
   width: 25rem;
+  margin: 2rem;
 }
 .about .rightSide {
   margin: 1rem 4.5rem;
@@ -587,7 +588,7 @@ button:active {
 
 .skills {
   height: 70vh;
-  background-color: grey;
+  background-color: rgb(73, 72, 72);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,7 +617,7 @@ button:active {
 }
 
 .portfolio {
-  height: 100vh;
+  height: 80vh;
   background-color: white;
   position: relative;
 }
@@ -679,18 +680,27 @@ button:active {
       -ms-flex-align: center;
           align-items: center;
 }
+.portfolio .portfolioImages .portfolioCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 26%;
+  margin: 1rem;
+}
 .portfolio .portfolioImages .portfolioCards .liveLinks {
-  height: 5rem;
+  height: 4rem;
+  margin: auto;
 }
-.portfolio .portfolioImages div {
-  width: 19rem;
-  height: 17rem;
-  margin: 0.5rem;
+.portfolio .portfolioImages .portfolioCards .liveLinks a button {
+  width: 9rem;
 }
-.portfolio .portfolioImages div img {
-  border-radius: 0.5rem;
-  width: 19rem;
-  height: 17rem;
+.portfolio .portfolioImages .portfolioCards img {
+  margin: 1rem;
+  height: 10rem;
 }
 
 .getInTouch {
@@ -824,7 +834,8 @@ footer .social a:hover {
             flex-direction: column;
   }
   .about .lefttSide img {
-    width: 5rem;
+    width: 15rem;
+    height: 15rem;
   }
   .about .rightSide {
     margin: 1rem 1.5rem;
@@ -840,7 +851,9 @@ footer .social a:hover {
     padding: 2rem;
   }
   .skills .rightSkill img {
-    width: 5rem;
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem;
   }
   .portfolio {
     height: 200vh;
@@ -852,6 +865,25 @@ footer .social a:hover {
     position: absolute;
     top: -20px;
     left: 50px;
+  }
+  .portfolio .portfolioImages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio .portfolioImages .portfolioCards {
+    width: 80%;
+  }
+  .portfolio .portfolioImages .portfolioCards img {
+    margin: 0.3rem;
+  }
+  .portfolio .portfolioImages .portfolioCards .liveLinks {
+    margin: 2rem auto;
+    height: 2rem;
+  }
+  .portfolio .portfolioImages .portfolioCards .liveLinks a button {
+    width: 7rem;
   }
   .portfolio .portfolioImages div {
     margin: 0;
@@ -879,5 +911,21 @@ footer .social a:hover {
   }
   footer {
     height: 15vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .social {
+    margin: auto;
+  }
+}
+@media (min-width: 2200px) {
+  html {
+    font-size: 170%;
+  }
+  .wrapper {
+    max-width: 2000px;
+    margin: auto;
   }
 }

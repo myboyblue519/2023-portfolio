@@ -280,7 +280,8 @@ body {
 
 header {
   height: 90vh;
-  background-color: rgb(73, 72, 72);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(44, 44, 44, 0.6)), to(rgb(44, 44, 44)));
+  background-image: linear-gradient(to bottom right, rgba(44, 44, 44, 0.6), rgb(44, 44, 44));
   position: relative;
 }
 header .introduction {
@@ -371,7 +372,7 @@ header nav ul {
 header nav ul li {
   margin-left: 3rem;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 header nav ul a:hover {
@@ -553,7 +554,7 @@ header a {
 }
 .about .lefttSide img {
   height: 25rem;
-  width: 25rem;
+  width: 15rem;
   margin: 2rem;
 }
 .about .rightSide {
@@ -791,7 +792,8 @@ button:active {
 
 footer {
   height: 5vh;
-  background-color: grey;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(44, 44, 44, 0.6)), to(rgb(44, 44, 44)));
+  background-image: linear-gradient(to right, rgba(44, 44, 44, 0.6), rgb(44, 44, 44));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

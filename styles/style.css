@@ -281,6 +281,7 @@ body {
 header {
   height: 90vh;
   background-color: rgb(73, 72, 72);
+  position: relative;
 }
 header .introduction {
   display: -webkit-box;
@@ -446,6 +447,22 @@ header a {
             transform: translateY(0);
   }
 }
+.mobile {
+  font-size: 140%;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 2rem;
+  color: #fff;
+  display: none;
+}
+
+.mobile a:link,
+.mobile a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
 .myWorld {
   height: 100vh;
   background-color: seashell;
@@ -509,13 +526,13 @@ header a {
 }
 .myWorld .myWorldSquiggle {
   position: relative;
-  top: 40px;
-  left: 70px;
+  top: 2rem;
+  left: 3.5rem;
 }
 .myWorld .myWorldDashes {
   position: relative;
-  bottom: -80px;
-  left: 1400px;
+  bottom: -4rem;
+  left: 70rem;
 }
 
 .about {
@@ -528,8 +545,8 @@ header a {
 }
 .about .aboutScribble {
   position: absolute;
-  bottom: -35px;
-  left: 35px;
+  bottom: -1.75rem;
+  left: 1.75rem;
 }
 .about .lefttSide {
   width: 50%;
@@ -632,8 +649,8 @@ button:active {
 }
 .portfolio .portfolioSquiggle {
   position: absolute;
-  top: 100px;
-  left: 50px;
+  top: 5rem;
+  left: 2.5rem;
 }
 .portfolio .portfolioTitle {
   display: -webkit-box;
@@ -719,8 +736,8 @@ button:active {
 }
 .getInTouch .getInTouchSquiggle {
   position: absolute;
-  top: 60px;
-  left: 1360px;
+  top: 3rem;
+  left: 68rem;
 }
 .getInTouch .touch {
   display: -webkit-box;
@@ -800,10 +817,26 @@ footer .social a:hover {
 
 @media (max-width: 500px) {
   header {
-    height: 100vh;
+    height: 95vh;
+  }
+  header nav {
+    display: none;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  header .mobile {
+    display: block;
   }
   header .introduction {
-    margin: 2rem auto;
+    margin: 0 auto;
+    padding-top: 5rem;
   }
   header .introduction h1 {
     font-size: 2.8rem;
@@ -868,7 +901,7 @@ footer .social a:hover {
     margin: 1rem;
   }
   .portfolio {
-    height: 200vh;
+    height: 150vh;
   }
   .portfolio .portfolioTitle {
     margin: 2rem 1rem 2rem;
@@ -939,5 +972,9 @@ footer .social a:hover {
   .wrapper {
     max-width: 2000px;
     margin: auto;
+  }
+  .about p,
+.skills p {
+    font-size: 1.2rem;
   }
 }

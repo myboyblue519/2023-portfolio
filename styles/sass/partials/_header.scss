@@ -4,6 +4,7 @@
 header {
     height: 90vh;
     background-color: rgb(73, 72, 72);
+    position: relative;
 
     .introduction {
         display: flex;
@@ -74,6 +75,8 @@ header {
 
     nav {
         margin-right: 4rem;
+        // display: none;
+
 
         ul {
             margin: 0;
@@ -81,6 +84,7 @@ header {
             justify-content: flex-end;
             list-style: none;
             padding: 1rem;
+
 
             li {
                 margin-left: 3rem;
@@ -132,4 +136,51 @@ header {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+// .toggleButton {
+//     position: absolute;
+//     top: .75rem;
+//     right: 1rem;
+//     display: none;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     width: 1.5rem;
+//     height: 1rem;
+// }
+
+
+// .bar:hover {
+//     background-color: $primaryColor;
+
+// }
+
+// .toggleButton:hover {
+//     background-color: $primaryColor;
+//     color: $primaryColor;
+// }
+
+// .bar {
+//     height: 3px;
+//     width: 100%;
+//     background-color: #fff;
+//     border-radius: 10px;
+
+// }
+
+.mobile {
+    font-size: 140%;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: 2rem;
+    color: #fff;
+    display: none;
+
+}
+
+.mobile a:link,
+.mobile a:hover {
+    color: #000;
+    text-decoration: none;
 }

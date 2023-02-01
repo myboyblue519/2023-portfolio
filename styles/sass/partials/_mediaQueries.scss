@@ -48,6 +48,7 @@
             h1 {
                 font-size: 2.8rem;
                 animation: none;
+                margin: 1.9rem;
             }
 
             button {
@@ -78,122 +79,123 @@
             flex-direction: column;
 
             .skillCube {
-                margin: 0;
+                margin: 1rem auto;
             }
         }
     }
 
 
     .about {
-        height: 130vh;
-        flex-direction: column;
+        height: 165vh;
+        flex-direction: column-reverse;
 
         .lefttSide {
             img {
-                width: 15rem;
-                height: 15rem;
-            }
-        }
-
-        .rightSide {
-            margin: 1rem 1.5rem;
-        }
-    }
-
-    .skills {
-        flex-direction: column;
-        height: 120vh;
-
-        .leftSkill {
-            .text {
-                padding: 2rem;
-            }
-        }
-
-        .rightSkill {
-            img {
-                width: 15rem;
-                height: 15rem;
-                margin: 1rem;
-            }
-        }
-
-    }
-
-
-    .portfolio {
-        height: 150vh;
-
-        .portfolioTitle {
-            margin: 2rem 1rem 2rem;
-        }
-
-        .portfolioSquiggle {
-            position: absolute;
-            top: -20px;
-            left: 50px;
-        }
-
-        .portfolioImages {
-            flex-direction: column;
-
-            .portfolioCards {
-                width: 80%;
-
-                img {
-                    margin: .3rem;
-                }
-
-                .liveLinks {
-                    margin: 2rem auto;
-                    height: 2rem;
-
-                    a button {
-                        width: 7rem;
-                    }
-                }
-            }
-
-            div {
-                margin: 0;
-
-                img {
-                    border-radius: 0.5rem;
-                    width: 95%;
-                    height: 17rem;
-                }
+                width: 11rem;
+                height: 18rem;
             }
         }
     }
 
-    .getInTouch {
-        height: 80vh;
+    .rightSide {
+        margin: 1rem 1.5rem;
+    }
+}
 
-        .getInTouchSquiggle {
-            img {
-                display: none;
-            }
-        }
+.skills {
+    flex-direction: column;
+    height: 120vh;
 
-        .touch ul {
-            margin: 4rem auto;
-            flex-direction: column;
-
-            li {
-                margin: 1rem 0 0rem 2rem;
-            }
-
+    .leftSkill {
+        .text {
+            padding: 2rem;
         }
     }
 
-    footer {
-        height: 15vh;
+    .rightSkill {
+        img {
+            width: 15rem;
+            height: 15rem;
+            margin: 1rem;
+        }
+    }
+
+}
+
+
+.portfolio {
+    height: 150vh;
+
+    .portfolioTitle {
+        margin: 2rem 1rem 2rem;
+    }
+
+    .portfolioSquiggle {
+        position: absolute;
+        top: -20px;
+        left: 50px;
+    }
+
+    .portfolioImages {
         flex-direction: column;
 
-        .social {
-            margin: auto;
+        .portfolioCards {
+            width: 80%;
+
+            img {
+                margin: .3rem;
+            }
+
+            .liveLinks {
+                margin: 2rem auto;
+                height: 2rem;
+
+                a button {
+                    width: 7rem;
+                }
+            }
+        }
+
+        div {
+            margin: 0;
+
+            img {
+                border-radius: 0.5rem;
+                width: 95%;
+                height: 17rem;
+            }
         }
     }
+}
+
+.getInTouch {
+    height: 80vh;
+
+    .getInTouchSquiggle {
+        img {
+            display: none;
+        }
+    }
+
+    .touch ul {
+        margin: 4rem auto;
+        flex-direction: column;
+
+        li {
+            margin: 1rem 0 0rem 2rem;
+        }
+
+    }
+}
+
+footer {
+    height: 15vh;
+    flex-direction: column;
+
+    .social {
+        margin: auto;
+    }
+}
 }
 
 @media (min-width: 2200px) {

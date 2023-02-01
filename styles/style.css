@@ -844,6 +844,7 @@ footer .social a:hover {
     font-size: 2.8rem;
     -webkit-animation: none;
             animation: none;
+    margin: 1.9rem;
   }
   header .introduction button {
     width: 8rem;
@@ -871,18 +872,17 @@ footer .social a:hover {
             flex-direction: column;
   }
   .myWorld .skillBoxes .skillCube {
-    margin: 0;
+    margin: 1rem auto;
   }
   .about {
     height: 130vh;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .about .lefttSide img {
-    width: 15rem;
-    height: 15rem;
+    height: 25rem;
   }
   .about .rightSide {
     margin: 1rem 1.5rem;

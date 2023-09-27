@@ -340,6 +340,7 @@ header .introduction h1 {
   margin: 0.5rem 0;
   font-size: 4rem;
   color: white;
+  text-align: center;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
   -webkit-animation-duration: 2s;
@@ -755,6 +756,7 @@ button:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 3rem;
 }
 .getInTouch .touch h3 {
   font-size: 1.5rem;
@@ -764,30 +766,30 @@ button:active {
 .getInTouch .touch h3 i {
   color: green;
 }
-.getInTouch .touch ul {
+.getInTouch ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 4rem auto;
 }
-.getInTouch .touch ul li {
+.getInTouch ul li {
   list-style: none;
   margin: auto 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.getInTouch .touch ul li .contactImg {
+.getInTouch ul li .contactImg {
   width: 3rem;
   height: 3rem;
   background-color: springgreen;
   border-radius: 50%;
 }
-.getInTouch .touch ul li .contactImg i {
+.getInTouch ul li .contactImg i {
   color: white;
   margin: 1rem;
 }
-.getInTouch .touch ul li .contactInfo {
+.getInTouch ul li .contactInfo {
   margin: 0.5rem 0.5rem;
 }
 
@@ -818,7 +820,88 @@ footer .social a:hover {
   color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1310px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+  .myWorld .welcome {
+    margin: 0 8rem 3.6rem;
+  }
+  .portfolio {
+    height: 200vh;
+  }
+  .portfolio .portfolioImages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio .portfolioImages .portfolioCards {
+    width: 40%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio .portfolioSquiggle {
+    right: 2.5rem;
+  }
+  .portfolio .portfolioTitle {
+    margin: 2rem 12rem;
+  }
+}
+@media (max-width: 970px) {
+  header .introduction h1 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  .myWorld {
+    height: 150vh;
+  }
+  .myWorld .welcome {
+    margin: 0 3rem 2rem;
+  }
+  .myWorld .skillBoxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .myWorld .skillBoxes .skillCube {
+    margin: 0.5rem 0.5rem;
+    height: 13rem;
+    width: 23rem;
+  }
+  .about {
+    height: 70vh;
+  }
+  .about .lefttSide {
+    width: 0;
+    display: none;
+  }
+  .portfolio .portfolioImages .portfolioCards {
+    width: 80%;
+  }
+  .portfolio .portfolioSquiggle {
+    top: 1rem;
+    right: 1rem;
+  }
+  .portfolio .portfolioTitle {
+    margin: 2rem 7rem;
+  }
+  .portfolio .portfolioTitle h3 {
+    font-size: 1.4rem;
+  }
+  .getInTouch .touch ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .getInTouch .touch ul div {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 560px) {
   header {
     height: 95vh;
   }
@@ -854,7 +937,10 @@ footer .social a:hover {
     margin-left: 4rem;
   }
   .myWorld {
-    height: 180vh;
+    height: 160vh;
+  }
+  .myWorld .myWorldSquiggle {
+    top: 0rem;
   }
   .myWorld .myWorldDashes img {
     display: none;
@@ -864,32 +950,37 @@ footer .social a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 3rem 5rem;
+    margin: 0px 1.5rem 4rem;
   }
-  .myWorld .skillBoxes {
+  .myWorld .welcome h3 {
+    font-size: 1.2rem;
+  }
+  .skillBoxes {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .myWorld .skillBoxes .skillCube {
+  .skillBoxes .skillCube {
     margin: 1rem auto;
   }
-  .about {
-    height: 165vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .about .lefttSide img {
-    width: 11rem;
-    height: 18rem;
-  }
-  .rightSide {
-    margin: 1rem 1.5rem;
-  }
 }
+.about {
+  height: 85vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+.about .lefttSide img {
+  width: 11rem;
+  height: 18rem;
+}
+
+.rightSide {
+  margin: 1rem 1.5rem;
+}
+
 .skills {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -905,61 +996,78 @@ footer .social a:hover {
   height: 15rem;
   margin: 1rem;
 }
-.skills .portfolio {
+
+.portfolio {
   height: 150vh;
 }
-.skills .portfolio .portfolioTitle {
-  margin: 2rem 1rem 2rem;
+.portfolio .portfolioSquiggle {
+  display: none;
 }
-.skills .portfolio .portfolioSquiggle {
-  position: absolute;
-  top: -20px;
-  left: 50px;
+.portfolio .portfolioTitle {
+  margin: 2rem 2rem;
 }
-.skills .portfolio .portfolioImages {
+.portfolio .portfolioImages {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.skills .portfolio .portfolioImages .portfolioCards {
+.portfolio .portfolioImages .portfolioCards {
   width: 80%;
 }
-.skills .portfolio .portfolioImages .portfolioCards img {
+.portfolio .portfolioImages .portfolioCards img {
   margin: 0.3rem;
 }
-.skills .portfolio .portfolioImages .portfolioCards .liveLinks {
+.portfolio .portfolioImages .portfolioCards .liveLinks {
   margin: 2rem auto;
   height: 2rem;
 }
-.skills .portfolio .portfolioImages .portfolioCards .liveLinks a button {
+.portfolio .portfolioImages .portfolioCards .liveLinks a button {
   width: 7rem;
 }
-.skills .portfolio .portfolioImages div {
+.portfolio .portfolioImages div {
   margin: 0;
 }
-.skills .portfolio .portfolioImages div img {
+.portfolio .portfolioImages div img {
   border-radius: 0.5rem;
   width: 95%;
   height: 17rem;
 }
-.skills .getInTouch {
+
+.getInTouch {
   height: 80vh;
 }
-.skills .getInTouch .getInTouchSquiggle img {
+.getInTouch .getInTouchSquiggle img {
   display: none;
 }
-.skills .getInTouch .touch ul {
+.getInTouch .touch ul {
   margin: 4rem auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.skills .getInTouch .touch ul li {
+.getInTouch .touch ul li {
   margin: 1rem 0 0rem 2rem;
 }
 
+@media (max-width: 465px) {
+  html {
+    font-size: 95%;
+  }
+  header {
+    height: 75vh;
+  }
+  .myWorld {
+    height: 130vh;
+  }
+  .getInTouch {
+    height: 70vh;
+  }
+  footer {
+    height: 10vh;
+  }
+}
 footer {
   height: 15vh;
   -webkit-box-orient: vertical;
@@ -980,7 +1088,7 @@ footer .social {
     margin: auto;
   }
   .about p,
-.skills p {
+  .skills p {
     font-size: 1.2rem;
   }
 }
